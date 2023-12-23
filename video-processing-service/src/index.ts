@@ -12,7 +12,7 @@ app.post('/process-video', (req, res) => {
 
   // Check if the input file path is defined
   if (!inputFilePath || !outputFilePath) {
-    return res.status(400).send('Bad Request: Missing file path');
+     res.status(400).send('Bad Request: Missing file path');
   }
 
   // Create the ffmpeg command
